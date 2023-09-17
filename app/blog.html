@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+
+    <link href="css/jquery.formstyler.css" rel="stylesheet" />
+    <link href="css/jquery.formstyler.theme.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="scss/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="_container">
+            <div class="header__inner">
+                <div class="header__item">
+                    <button class="menu__btn">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </button>
+                    <div class="mobile-menu">
+                        <div class="mobile-menu__inner">
+                            <div class="mobile-menu__inner__scroll">
+                                <div class="mobile-nav-button mobile-nav-button_close js-mobile-nav-button">
+                                    <div class="mobile-nav-button__line mobile-nav-button__line_1"></div>
+                                    <div class="mobile-nav-button__line mobile-nav-button__line_2"></div>
+                                    <div class="mobile-nav-button__line mobile-nav-button__line_3"></div>
+                                </div>
+                                <nav class="mobile-nav">
+                                    <ul class="mobile__list">
+                                        <li class="mobile__list-item menu__list-item">
+                                            <a class="mobile__list-link menu__list-link" href="index.html">
+                                                на главную
+                                            </a>
+                                        </li>
+                                        </li>
+                                        <li class="mobile__list-item menu__list-item">
+                                            <ul class="footer-social">
+                                                <li class="footer-social__item">
+                                                    <a class="footer-social__link" href="#"><img src="images/vk.svg"
+                                                            alt=""></a>
+                                                </li>
+                                                <li class="footer-social__item">
+                                                    <a class="footer-social__link" href="#"><img
+                                                            src="images/classmates.png" alt=""></a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="logo" src="images/logo.svg" alt="logo">
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li class="menu__list-item back"><a class="menu__list-link" href="index.html">На главную</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header__item-phone">
+                    <a class="header__phone" href="tel:+78126492940">+7 (812) 649 29 40</a>
+                    <a class="header__btn btn" href="#form">Обсудить проект</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="blog">
+        <div class="_container">
+            <h1 class="blog__title">Блог</h1>
+            <div class="blog__inner">
+                <div class="blog__item">
+                    <a class="blog__item-link" href="#">
+                        <img class="blog__item-img" src="images/blog-img1.jpg" alt="">
+                        <div class="blog__item-content">
+                            <span class="blog__item-date">22.03.2022 </span>
+                            <h3 class="blog__item-title">
+                                Зонирование офиса, идеальная акустика и интересные дизайнерские решения: кейс о
+                                перепланировке и ремонте офиса компании Metso Outotec
+                            </h3>
+                            <p class="blog__item-text">
+                                За неполных 4 месяца наши специалисты сделали из пустого помещения площадью 1677 м²
+                                дизайнерский офис для международной компании. Без накладок не обошлось, но команда СТ
+                                Констракшн и не с таким справлялась!
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="blog__item">
+                    <a class="blog__item-link" href="#">
+                        <img class="blog__item-img" src="images/blog-img2.jpg" alt="">
+                        <div class="blog__item-content">
+                            <span class="blog__item-date">22.03.2022 </span>
+                            <h3 class="blog__item-title">
+                                Капитальный ремонт офиса IT-компании: история масштабного проекта, в котором всё шло не
+                                по плану
+                            </h3>
+                            <p class="blog__item-text">
+                                Закон Мёрфи, он же закон подлости, гласит — если что-нибудь может пойти не так, оно
+                                пойдет не так. В нашем портфолио есть один проект, в котором так и было. На его примере
+                                мы поясняем новым заказчикам, что может повлиять на ход работ и как этого не допустить.
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <form class="message-form blog-form" action="" id="form">
+        <span class="message-form__subtitle">
+            Напишите нам — менеджер перезвонит в течение 12 часов в рабочий день, чтобы уточнить детали, ответить на
+            вопросы
+            и согласовать встречу!
+        </span>
+        <div class="message-form__inner">
+            <input class="message-form__input" type="text" placeholder="Имя*">
+            <input class="message-form__input" type="text" placeholder="Площадь помещения*">
+            <input class="message-form__input" type="text" placeholder="Email*">
+            <input class="message-form__input" type="text" placeholder="Адрес объекта строительства*">
+            <input class="message-form__input" type="text" placeholder="Номер телефона*">
+            <label class="message-form__checkbox-label" for="checkDisign">
+                <span>Дизайн-проект готов</span>
+                <input class="message-form__checkbox" id="checkDisign" type="checkbox" checked name="" id="">
+            </label>
+
+        </div>
+        <label class="message-form__checkbox-label date">
+            <span>Согласен с обработкой и хранением моих персональных данных</span>
+            <input class="message-form__checkbox" id="checkDate3" type="checkbox" name="" id="">
+        </label>
+
+        <button class="message-form__btn btn" id="btnSubmit3" type="submit">Жду звонка!</button>
+    </form>
+
+
+    <footer class="footer" id="footer">
+        <div class="_container">
+            <div class="footer__inner">
+                <img class="footer-img" src="images/logo.svg" alt="">
+                <div class="footer__item">
+                    <span class="footer__item-text">ООО "СТ Констракшн"</span>
+                    <span class="footer__item-text geo">
+                        г. Санкт-Петербург, пр. М. Блюхера, д. 12 к. 7, БЦ «АВМ», оф.307
+                    </span>
+                </div>
+                <div class="footer__item">
+                    <a class="footer__item-text phone" href="tel:+78126492940">+7 (812) 649 - 29- 40</a>
+                    <a class="footer__item-text mail" href="mailto:info@stconstruction.ru">info@stconstruction.ru</a>
+                </div>
+                <div class="footer__item">
+                    <ul class="footer-social">
+                        <li class="footer-social__list">
+                            <a class="footer-social__link" href="#"><img src="images/vk.svg" alt=""></a>
+                        </li>
+                        <li class="footer-social__list">
+                            <a class="footer-social__link" href="#"><img src="" alt=""></a>
+                        </li>
+                        <li class="footer-social__list">
+                            <a class="footer-social__link" href="#"><img src="" alt=""></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <nav class="siteNav">
+        <ul class="siteNav__list">
+            <li class="siteNav__list-item"><a class="siteNav__list-link" href="#top"></a></li>
+            <li class="siteNav__list-item"><a class="siteNav__list-link" href="#footer"></a></li>
+        </ul>
+    </nav>
+
+    <a class="top" href="#top"><img src="images/top.svg" alt=""></a>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/jquery.formstyler.min.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

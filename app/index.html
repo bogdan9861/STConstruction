@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+
+  <link href="css/jquery.formstyler.css" rel="stylesheet" />
+  <link href="css/jquery.formstyler.theme.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="scss/style.css">
+</head>
+
+<body>
+  <div class="wrapper" id="top">
+    <header class="header">
+      <div class="_container">
+        <div class="header__inner">
+          <div class="header__item">
+            <button class="menu__btn">
+              <div></div>
+              <div></div>
+              <div></div>
+            </button>
+            <div class="mobile-menu">
+              <div class="mobile-menu__inner">
+                <div class="mobile-menu__inner__scroll">
+                  <div class="mobile-nav-button mobile-nav-button_close js-mobile-nav-button">
+                    <div class="mobile-nav-button__line mobile-nav-button__line_1"></div>
+                    <div class="mobile-nav-button__line mobile-nav-button__line_2"></div>
+                    <div class="mobile-nav-button__line mobile-nav-button__line_3"></div>
+                  </div>
+                  <nav class="mobile-nav">
+                    <ul class="mobile__list">
+                      <li class="mobile__list-item menu__list-item">
+                        <a class="mobile__list-link menu__list-link" href="blog.html">
+                          Блог
+                        </a>
+                      </li>
+                      <li class="mobile__list-item menu__list-item">
+                        <a class="mobile__list-link menu__list-link" href="#project">Проекты
+                        </a>
+                      </li>
+                      <li class="mobile__list-item menu__list-item">
+                        <a class="mobile__list-link menu__list-link" href="#whoWeAre">
+                          Кто мы
+                        </a>
+                      </li>
+                      <li class="mobile__list-item menu__list-item">
+                        <ul class="footer-social">
+                          <li class="footer-social__item">
+                            <a class="footer-social__link" href="#"><img src="images/vk.svg" alt=""></a>
+                          </li>
+                          <li class="footer-social__item">
+                            <a class="footer-social__link" href="#"><img src="images/classmates.png" alt=""></a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+            <img class="logo" src="images/logo.svg" alt="logo">
+            <nav class="menu">
+              <ul class="menu__list">
+                <li class="menu__list-item"><a class="menu__list-link" href="blog.html">Блог</a></li>
+                <li class="menu__list-item"><a class="menu__list-link" href="#project">Проекты</a></li>
+                <li class="menu__list-item"><a class="menu__list-link" href="#whoWeAre">Кто мы</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header__item-phone">
+            <a class="header__phone" href="tel:+79652025896">+7 (965) 202 58 96</a>
+            <a class="header__btn btn" href="#form">Обсудить проект</a>
+          </div>
+          <ul class="header-social footer-social">
+            <li class="footer-social__item">
+              <a class="footer-social__link" href="#"><img src="images/vk.svg" alt=""></a>
+            </li>
+            <li class="footer-social__item">
+              <a class="footer-social__link" href="#"><img src="images/classmates.png" alt=""></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="_container">
+        <div class="main__inner">
+          <div class="main__content">
+            <h1 class="main__title">ST Construction </h1>
+            <p class="main__text">Выполняем ремонт любой сложности в офисах, расположенных в бизнес-центрах класса А
+            </p>
+            <a class="main__btn" href="#project">Посмотреть проекты</a>
+          </div>
+          <div class="main__img-wrapper">
+            <img class="main__img active" id="statikImg" src="images/valik.svg" alt="">
+            <img class="main__gif" id="dinamicImg" src="images/valik.gif" alt="">
+            <div class="main__img-dec">
+              <img src="images/valik-dec.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <section class="about">
+    <div class="_container">
+      <div class="about__inner" id="about">
+        <div class="about__item">
+          <h1 class="about__title">Кто вы? </h1>
+          <h3 class="about__subtitle about__subtitle-1">
+            Представитель компании, которая планирует переезд
+          </h3>
+          <p class="about__text">
+            Выполняем ремонт офиса под ключ в срок и с соблюдением бюджета
+          </p>
+          <a class="about__scroll-link" href="#">Посмотреть проекты</a>
+          <img class="about__item-img1" src="images/about_img1.png" alt="">
+        </div>
+        <div class="about__item">
+          <img class="about__item-img2" src="images/about_img2.png" alt="">
+          <h3 class="about__subtitle about__subtitle-2">Представитель дизайн - студии общественных пространств </h3>
+          <p class="about__text-black">
+            Работаем в синергии с дизайнерами для быстрой и эффективной реализации проекта
+          </p>
+          <div class="about__modal-linkWrap">
+            <a class="about__modal-link" data-fancybox href="#hidden">
+              Получить презентацию
+              <br> наших услуг
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="advantages" id="advantages">
+    <div class="_container">
+      <img src="images/advantages-img.png" alt="">
+      <div class="advantages__inner">
+        <h1 class="advantages__title">С нами спокойно </h1>
+        <div class="advantages__content">
+          <div class="advantages__content-wrap">
+            <img src="images/advantages-ico1.png" alt="">
+            <div class="advantages__content-item">
+              <p class="advantages__content-text">
+                <strong>Возьмем на себя закупку материалов и оборудования.</strong>Выберем поставщиков с гибкими
+                условиями и
+                сэкономим
+                ваши деньги, подобрав альтернативные материалы, работы и оборудование.
+              </p>
+            </div>
+          </div>
+          <div class="advantages__content-wrap">
+            <img src="images/advantages-ico2.png" alt="">
+            <div class="advantages__content-item">
+              <p class="advantages__content-text">
+                Предоставим все <strong> необходимые документы для участия в тендере</strong>, полную смету и четкие
+                сроки
+                выполнения работ.
+              </p>
+            </div>
+          </div>
+          <div class="advantages__content-wrap">
+            <img src="images/advantages-ico3.png" alt="">
+            <div class="advantages__content-item">
+              <p class="advantages__content-text">
+                Благодаря использованию <strong> agile-методологии всегда укладываемся в сроки </strong> ремонта офиса,
+                зафиксированные в
+                договоре.
+              </p>
+            </div>
+          </div>
+          <div class="advantages__content-wrap">
+            <img src="images/advantages-ico4.png" alt="">
+            <div class="advantages__content-item">
+              <p class="advantages__content-text">
+                <strong> Работаем исключительно с офисными помещениями </strong> с 2016 года и понимаем специфику этого
+                сегмента.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pluses" id="pluses">
+    <div class="_container">
+      <div class="pluses__inner">
+        <div class="pluses__item">
+          <h1 class="pluses__title">Реализация <br> на 100% совпадает с дизайн-проектом</h1>
+          <p class="pluses__text">Мы реализовали более 100 проектов, и все клиенты остались довольны. </p>
+        </div>
+        <div class="pluses__item pluses__item-list">
+          <ul class="pluses__list">
+            <li class="pluses__list-item">
+              Работаем в тесном контакте с дизайнерами и понимаем их требования
+            </li>
+            <li class="pluses__list-item">
+              Консультируемся с авторами проекта, если нужно внести изменения
+            </li>
+            <li class="pluses__list-item">
+              В спорных ситуациях находим решения, которые устраивают всех
+            </li>
+            <li class="pluses__list-item">
+              Организуем визит на готовый объект, чтобы вы убедились в качестве нашей работы
+            </li>
+          </ul>
+          <img class="pluses__item-mobile-img" src="images/pluses-mobile-img.png" alt="">
+        </div>
+        <div class="pluses__item">
+          <img class="pluses__item-img" src="images/pluses-img.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="projects" id="project">
+    <div class="_container">
+      <h1 class="projects__title">Смотреть наши примеры ремонта офиса «под ключ» </h1>
+      <div class="projects__slider">
+        <div class="projects__slider-item">
+          <div class="projects__slider-item__inner">
+            <div class="projects__slider-content">
+              <h2 class="projects__slider-title">
+                Международная компания Metso Outotec
+              </h2>
+              <p class="projects__slider-text">
+                В рамках этого проекта мы выполнили весь спектр строительно-монтажных работ: от демонтажа до подключения
+                рабочих мест сотрудников.
+              </p>
+            </div>
+            <div class="projects__slider__small-slider-wrap">
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img class="swiper-slide" src="images/content/246.jpg" alt=""></div>
+                  <div class="swiper-slide"><img class="swiper-slide" src="images/content/248.jpg" alt=""></div>
+                  <div class="swiper-slide"><img class="swiper-slide" src="images/content/250.jpg" alt=""></div>
+                  <div class="swiper-slide"><img class="swiper-slide" src="images/content/252.jpg" alt=""></div>
+                  <div class="swiper-slide"><img class="swiper-slide" src="images/content/255.jpg" alt=""></div>
+                  <button class="smallSlider-arrow smallLeft"><img src="images/smallLeftsvg.svg" alt=""></button>
+                  <button class="smallSlider-arrow smallRight"><img src="images/smallRight.svg" alt=""></button>
+                </div>
+              </div>
+              <div class="projects__slider__small-parameters parameters">
+                <div class="parameters__wrap">
+                  <strong class="parameters__title">Площадь:</strong>
+                  <span class="parameters__text">1500 м2</span>
+                </div>
+                <div class="parameters__wrap">
+                  <strong class="parameters__title">Срок выполнения:</strong>
+                  <span class="parameters__text">2 месяца</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="projects__slider-item">
+          <div class="projects__slider-item__inner">
+            <div class="projects__slider-content">
+              <h2 class="projects__slider-title">
+                Офис логистической компании в Санкт-Петербурге
+              </h2>
+              <p class="projects__slider-text">
+                Генподряд: от демонтажа до подключения рабочих мест. Благодаря тому, что заказчик и дизайнеры оперативно
+                реагировали на возникающие вопросы и сложности, удалось реализовать проект в кратчайшие сроки.
+              </p>
+            </div>
+            <div class="projects__slider__small-slider-wrap">
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img class="swiper-slide" src="images/content/267.jpg" alt=""></div>
+                  <div class="swiper-slide"><img class="swiper-slide" src="images/content/269.jpg" alt=""></div>
+                  <div class="swiper-slide"><img class="swiper-slide" src="images/content/3.jpg" alt=""></div>
+                  <div class="swiper-slide"><img class="swiper-slide" src="images/content/40.jpg" alt=""></div>
+                  <div class="swiper-slide"><img class="swiper-slide" src="images/content/4.jpg" alt=""></div>
+                </div>
+                <button class="smallSlider-arrow smallLeft"><img src="images/smallLeftsvg.svg" alt=""></button>
+                <button class="smallSlider-arrow smallRight"><img src="images/smallRight.svg" alt=""></button>
+
+              </div>
+              <div class="projects__slider__small-parameters parameters">
+                <div class="parameters__wrap">
+                  <strong class="parameters__title">Площадь:</strong>
+                  <span class="parameters__text">1500 м2</span>
+                </div>
+                <div class="parameters__wrap">
+                  <strong class="parameters__title">Срок выполнения:</strong>
+                  <span class="parameters__text">2 месяца</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="projects__slider-item">
+          <div class="projects__slider-item__inner">
+            <div class="projects__slider-content">
+              <h2 class="projects__slider-title">
+                Офис логистической компании в Санкт-Петербурге
+              </h2>
+              <p class="projects__slider-text">
+                Генподряд: от демонтажа до подключения рабочих мест. Благодаря тому, что заказчик и дизайнеры оперативно
+                реагировали на возникающие вопросы и сложности, удалось реализовать проект в кратчайшие сроки.
+              </p>
+            </div>
+            <div class="projects__slider__small-slider-wrap">
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img class="swiper-slide"
+                      src="images/content/477868__4607f8c060145a0bcb26fda871c95f17.jpg" alt=""></div>
+                  <div class="swiper-slide"><img class="swiper-slide"
+                      src="images/content/477870__f2d482235ece6246e10dbb7f58f85455.jpg" alt=""></div>
+                  <div class="swiper-slide"><img class="swiper-slide" src="images/content/5.jpg" alt=""></div>
+                  <div class="swiper-slide"><img class="swiper-slide" src="images/content/6.jpg" alt=""></div>
+                  <div class="swiper-slide"><img class="swiper-slide" src="images/content/8.jpg" alt=""></div>
+                </div>
+                <button class="smallSlider-arrow smallLeft"><img src="images/smallLeftsvg.svg" alt=""></button>
+                <button class="smallSlider-arrow smallRight"><img src="images/smallRight.svg" alt=""></button>
+
+              </div>
+              <div class="projects__slider__small-parameters parameters">
+                <div class="parameters__wrap">
+                  <strong class="parameters__title">Площадь:</strong>
+                  <span class="parameters__text">1500 м2</span>
+                </div>
+                <div class="parameters__wrap">
+                  <strong class="parameters__title">Срок выполнения:</strong>
+                  <span class="parameters__text">2 месяца</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="projects__slider-item">
+          <div class="projects__slider-item__inner">
+            <div class="projects__slider-content">
+              <h2 class="projects__slider-title">
+                Офис логистической компании в Санкт-Петербурге
+              </h2>
+              <p class="projects__slider-text">
+                Генподряд: от демонтажа до подключения рабочих мест. Благодаря тому, что заказчик и дизайнеры оперативно
+                реагировали на возникающие вопросы и сложности, удалось реализовать проект в кратчайшие сроки.
+              </p>
+            </div>
+            <div class="projects__slider__small-slider-wrap">
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img class="swiper-slide"
+                      src="images/content/86cab72cfdee85042c330315a6537318.jpg" alt=""></div>
+                  <div class="swiper-slide"><img class="swiper-slide" src="images/content/9.jpg" alt=""></div>
+                  <div class="swiper-slide"><img class="swiper-slide" src="images/content/Amilero-1-min.jpg" alt="">
+                  </div>
+                  <div class="swiper-slide"><img class="swiper-slide" src="images/content/Amilero-4-min.jpg" alt="">
+                  </div>
+                  <div class="swiper-slide"><img class="swiper-slide"
+                      src="images/content/e117b262363f76eafa0be78c5a6389ca.jpg" alt=""></div>
+                </div>
+                <button class="smallSlider-arrow smallLeft"><img src="images/smallLeftsvg.svg" alt=""></button>
+                <button class="smallSlider-arrow smallRight"><img src="images/smallRight.svg" alt=""></button>
+
+              </div>
+              <div class="projects__slider__small-parameters parameters">
+                <div class="parameters__wrap">
+                  <strong class="parameters__title">Площадь:</strong>
+                  <span class="parameters__text">1500 м2</span>
+                </div>
+                <div class="parameters__wrap">
+                  <strong class="parameters__title">Срок выполнения:</strong>
+                  <span class="parameters__text">2 месяца</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="projects__slider-item">
+          <div class="projects__slider-item__inner">
+            <div class="projects__slider-content">
+              <h2 class="projects__slider-title">
+                Офис логистической компании в Санкт-Петербурге
+              </h2>
+              <p class="projects__slider-text">
+                Генподряд: от демонтажа до подключения рабочих мест. Благодаря тому, что заказчик и дизайнеры оперативно
+                реагировали на возникающие вопросы и сложности, удалось реализовать проект в кратчайшие сроки.
+              </p>
+            </div>
+            <div class="projects__slider__small-slider-wrap">
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img class="swiper-slide" src="images/content/erydyvkxnkk.jpg" alt=""></div>
+                  <div class="swiper-slide"><img class="swiper-slide" src="images/content/file_0my8y.jpg" alt=""></div>
+                  <div class="swiper-slide"><img class="swiper-slide" src="images/content/h8-okxlxkua.jpg" alt=""></div>
+                  <div class="swiper-slide"><img class="swiper-slide" src="images/content/idei-dizajna-interera42.jpg"
+                      alt=""></div>
+                  <div class="swiper-slide"><img class="swiper-slide"
+                      src="images/content/None__5ab30e7bbe2b317ac02ca5a5ff0730e0.jpg" alt=""></div>
+                </div>
+                <button class="smallSlider-arrow smallLeft"><img src="images/smallLeftsvg.svg" alt=""></button>
+                <button class="smallSlider-arrow smallRight"><img src="images/smallRight.svg" alt=""></button>
+
+              </div>
+              <div class="projects__slider__small-parameters parameters">
+                <div class="parameters__wrap">
+                  <strong class="parameters__title">Площадь:</strong>
+                  <span class="parameters__text">1500 м2</span>
+                </div>
+                <div class="parameters__wrap">
+                  <strong class="parameters__title">Срок выполнения:</strong>
+                  <span class="parameters__text">2 месяца</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="projects__slider-item">
+          <div class="projects__slider-item__inner">
+            <div class="projects__slider-content">
+              <h2 class="projects__slider-title">
+                Офис логистической компании в Санкт-Петербурге
+              </h2>
+              <p class="projects__slider-text">
+                Генподряд: от демонтажа до подключения рабочих мест. Благодаря тому, что заказчик и дизайнеры оперативно
+                реагировали на возникающие вопросы и сложности, удалось реализовать проект в кратчайшие сроки.
+              </p>
+            </div>
+            <div class="projects__slider__small-slider-wrap">
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img class="swiper-slide"
+                      src="images/content/None__8621fcfdd2bfa88a0abe1ee8baed4517.jpg" alt=""></div>
+                  <div class="swiper-slide"><img class="swiper-slide"
+                      src="images/content/None__aae7d50c31cf2be05012c43c051dd18f.jpg" alt=""></div>
+                  <div class="swiper-slide"><img class="swiper-slide"
+                      src="images/content/None__ac9be4e76bbfa979b799bee912c5a748.jpg" alt=""></div>
+                  <div class="swiper-slide"><img class="swiper-slide" src="images/content/slide15-full-1.jpg" alt="">
+                  </div>
+                  <div class="swiper-slide"><img class="swiper-slide"
+                      src="images/content/SuvorovOfice_001VRayPhysicalCamera001.jpg" alt=""></div>
+                  <div class="swiper-slide"><img class="swiper-slide"
+                      src="images/content/SuvorovOfice_001VRayPhysicalCamera002.jpg" alt=""></div>
+                </div>
+                <button class="smallSlider-arrow smallLeft"><img src="images/smallLeftsvg.svg" alt=""></button>
+                <button class="smallSlider-arrow smallRight"><img src="images/smallRight.svg" alt=""></button>
+
+              </div>
+              <div class="projects__slider__small-parameters parameters">
+                <div class="parameters__wrap">
+                  <strong class="parameters__title">Площадь:</strong>
+                  <span class="parameters__text">1500 м2</span>
+                </div>
+                <div class="parameters__wrap">
+                  <strong class="parameters__title">Срок выполнения:</strong>
+                  <span class="parameters__text">2 месяца</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <section class="plane" id="plane">
+    <div class="_container">
+      <div class="plane__inner">
+        <h1 class="plane__title">Ремонт офиса под ключ: как мы будем работать над проектом </h1>
+        <ol class="plane-list">
+          <li class="plane-list__item">
+            <p class="plane-list__text">
+              Запросим у вас вводные данные: площадь помещения, бюджет, желаемые сроки реализации
+            </p>
+          </li>
+          <li class="plane-list__item">
+            <p class="plane-list__text">
+              Обсудим ваши пожелания, ожидания от будущего офиса.
+            </p>
+          </li>
+          <li class="plane-list__item">
+            <p class="plane-list__text">
+              Изучим дизайн-проект и рабочую документацию к нему.
+            </p>
+          </li>
+          <li class="plane-list__item">
+            <p class="plane-list__text">
+              Встретимся с вами, дизайнерами и представителями бизнес-центра на объекте.
+            </p>
+          </li>
+          <li class="plane-list__item">
+            <p class="plane-list__text">
+              Пришлем вам коммерческое предложение со стоимостью и сроками ремонта офиса под ключ.
+            </p>
+          </li>
+          <li class="plane-list__item">
+            <p class="plane-list__text">
+              Согласуем условия договора и подпишем его.
+            </p>
+          </li>
+          <li class="plane-list__item">
+            <p class="plane-list__text">
+              Сразу после внесения аванса приступим к выполнению работ.
+            </p>
+          </li>
+          <li class="plane-list__item">
+            <p class="plane-list__text">
+              Выполним ремонт офиса
+              под ключ в срок.
+            </p>
+          </li>
+        </ol>
+        <div class="plane-btn__wrap">
+          <span class="plane-btn__text">
+            Даем гарантию 2 года на все виды работ: если появятся дефекты, устраним их бесплатно.
+          </span>
+          <a class="plane-btn project" href="#form">Обсудить проект</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="guide" id="guide">
+    <div class="_container">
+      <div class="guide__inner">
+        <div class="guide__content">
+          <h1 class="guide__title">Впервые заказываете ремонт офиса под ключ?</h1>
+          <p class="guide__text">
+            Мы подготовили пошаговое руководство, которое поможет вам сэкономить время и деньги. В нём описаны важные
+            нюансы каждого этапа, от выбора дизайн-студии и строительной компании до приемки работ и рекламации
+            дефектов.
+          </p>
+          <div class="guide__modal-wrap">
+            <a class="guide__modal" data-fancybox href="#hidden">Скачать бесплатный гайд</a>
+          </div>
+        </div>
+        <div class="guide__img-wrap">
+          <img class="guide__img" src="images/book.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="trust" id="trust">
+    <div class="_container">
+      <h1 class="trust__title">Нам доверяют </h1>
+      <div class="trust__inner">
+        <ul class="trust__list">
+          <li class="trust__list-item"><img src="images/logo-1.png" alt=""></li>
+          <li class="trust__list-item"><img src="images/logo-2.png" alt=""></li>
+          <li class="trust__list-item"><img src="images/logo-3.png" alt=""></li>
+          <li class="trust__list-item"><img src="images/logo-4.png" alt=""></li>
+          <li class="trust__list-item"><img src="images/logo-5.png" alt=""></li>
+          <li class="trust__list-item"><img src="images/logo-6.png" alt=""></li>
+        </ul>
+      </div>
+      <a class="trust__btn btn" href="#form">Обсудить проект</a>
+    </div>
+  </section>
+
+  <section class="whoWeAre" id="whoWeAre">
+    <div class="_container">
+      <div class="whoWeAre__topContent">
+        <h1 class="whoWeAre__topContent-title">Кто мы</h1>
+        <p class="whoWeAre__topContent-text">
+          ST Construction — команда специалистов с опытом работы более 7 лет. Компанию основали:
+        </p>
+      </div>
+      <div class="whoWeAre__inner">
+        <div class="whoWeAre__item">
+          <img src="images/whoWeAre-1.png" alt="">
+          <div class="whoWeAre__content">
+            <h3 class="whoWeAre__name">Анатолий Зеленков</h3>
+            <span class="whoWeAre__job">Генеральный директор</span>
+            <p class="whoWeAre__text">
+              Более 16 лет в строительной отрасли (монтажные и отделочные работы, закупки, проектирование и управление
+              проектами), более 10 лет опыта управления бизнесом.
+            </p>
+          </div>
+        </div>
+
+        <div class="whoWeAre__item">
+          <img src="images/whoWeAre-2.png" alt="">
+          <div class="whoWeAre__content">
+            <h3 class="whoWeAre__name">Антон Колышев</h3>
+            <span class="whoWeAre__job">Технический директор </span>
+            <p class="whoWeAre__text">
+              Более 14 лет в строительстве. В его портфолио: ФГБУ «НМИЦ онкологии им. Н. Н. Петрова» Минздрава России,
+              стоматология «Новый век», реставрация Свято-Троицкого Александра Свирского монастыря.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="message-wrapper">
+    <section class="message">
+      <div class="_conatainer">
+        <div class="message-top">
+          <div class="message-top__inner">
+            <p class="message-top__text">
+              У нас есть все необходимые допуски, в том числе допуск «саморегулируемой организации» (регистрационный
+              номер
+              в государственном реестре — СРО-С-180-20012010), который позволяет заниматься строительством,
+              реконструкцией, делать капитальный ремонт объектов капитального строительства.
+            </p>
+            <a class="message-top__btn btn" href="#form">Обсудить проект</a>
+          </div>
+        </div>
+        <div class="message__inner" id="message">
+          <div class="message-img__wrap">
+            <img class="message-img" src="images/message-img.jpg" alt="">
+          </div>
+          <div class="message-content">
+            <h1 class="message__title">
+              Сколько стоит ремонт офиса под ключ
+            </h1>
+            <strong class="message__subtitle">
+              На стоимость реализации проекта влияет множество факторов:
+            </strong>
+            <ul class="message__list">
+              <li class="message__list-item">Площадь помещения и его состояние.</li>
+              <li class="message__list-item">Сложность дизайн-проекта.</li>
+              <li class="message__list-item">Сроки реализации.</li>
+              <li class="message__list-item">
+                Используемые материалы. От способа их нанесения, крепления зависят трудозатраты, а значит, и стоимость
+                проекта.
+              </li>
+              <li class="message__list-item">
+                То, кто занимается закупками. Мы можем взять коммуникацию с поставщиками на себя: решим все проблемы,
+                которые могут возникнуть с поставками, качеством и т. д. Вам не придется заключать договора с
+                поставщиками, согласовывать условия и контролировать сроки.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <span class="message-form__subtitle">
+          Чем больше задач на нас, тем выше стоимость проекта, поэтому она рассчитывается после обсуждения деталей и
+          визита на объект. Напишите нам — менеджер перезвонит в течение 12 часов в рабочий день, чтобы уточнить
+          детали, ответить на вопросы и согласовать встречу!
+        </span>
+        <form class="message-form" action="" id="form">
+          <div class="message-form__inner">
+            <input required class="message-form__input" type="text" placeholder="Имя*">
+            <input required class="message-form__input" type="text" placeholder="Площадь помещения*">
+            <input required class="message-form__input" type="text" placeholder="Email*">
+            <input required class="message-form__input" type="text" placeholder="Адрес объекта строительства*">
+            <input required class="message-form__input" type="text" placeholder="Номер телефона*">
+            <label class="message-form__checkbox-label" for="checkDisign">
+              <span>Дизайн-проект готов</span>
+              <input class="message-form__checkbox" id="checkDisign" type="checkbox" name="" id="">
+            </label>
+
+          </div>
+          <label class="message-form__checkbox-label date">
+            <span>Согласен с обработкой и хранением моих персональных данных</span>
+            <input class="message-form__checkbox" id="checkDate1" type="checkbox" name="" id="">
+          </label>
+
+          <button class="message-form__btn btn" id="btnSubmit1" type="submit">Жду звонка!</button>
+        </form>
+      </div>
+    </section>
+  </div>
+
+  <div class="spoiler">
+    <div class="_container">
+      <h2 class="spoiler__title">
+        Ремонт офисов в Санкт-Петербурге: опытная команда и гарантия 2 года на все виды работ
+      </h2>
+      <p class="spoiler__text">
+        Специализация ST Construction — ремонт офисов в СПб, расположенных в бизнес-центрах класса А, по заказу крупных
+        российских и международных компаний. С 2016 года мы делаем исключительно ремонт офиса под ключ. За это время
+        изучили специфику таких проектов, нашли надежных поставщиков материалов и оборудования, наладили партнерские
+        отношения с дизайн-студиями общественных пространств. Можем оказывать полный комплекс услуг на уровне, который
+        удовлетворит самых требовательных заказчиков.
+      </p>
+      <div class="spoiler__hidden-content hidden">
+        <p class="spoiler__text">
+          В нашем портфолио более 100 проектов: ремонт офисов Национального билетного оператора Kassir.ru, школы
+          английского
+          языка Speak Up, компаний Rabota.ru, Metso, Sever Minerals, «Авант», «БалтТрансСервис» и других интересных
+          общественных пространств. Если захотите узнать о качестве работ и сотрудничестве с командой из первых рук, мы
+          предоставим контакты клиентов, объекты которых уже готовы. Сможете пообщаться с ними напрямую и сделать
+          выводы.
+        </p>
+
+        <p class="spoiler__text">
+          Ремонт офисов в Санкт-Петербурге с ST Construction — это строгое соблюдение оговоренных сроков, соответствие
+          утвержденному бюджету и 100% совпадение с дизайн-проектом. А еще мы даем гарантию два года на все виды работ:
+          если
+          обнаружатся дефекты, устраним их за свой счет.
+        </p>
+        <p class="spoiler__text">
+          Если вы планируете ремонт офисов в СПб и выбираете исполнителя путем тендера, мы предоставим всю финансовую
+          отчетность, отчетность компании, назовем точную стоимость и сроки выполнения работ, дадим возможность
+          посмотреть
+          готовые объекты лично.
+        </p>
+        <p class="spoiler__text">
+          Новоселье состоится в назначенный срок — мы используем agile-методологию, благодаря чему всегда соблюдаем
+          дедлайны. ST Construction — ваш надежный партнер по вопросу ремонта офиса под ключ. В спорных ситуациях
+          находим
+          решения, которые устраивают всех: заказчика, дизайнеров, строителей, арендодателей и поставщиков.
+        </p>
+        <p class="spoiler__text">
+          Мы не только делаем ремонт офисов в СПб, но и закупаем оборудование, материалы у проверенных производителей и
+          дилеров. Наши партнеры всегда готовы предложить альтернативы, которые сэкономят ваши деньги.
+        </p>
+        <p class="spoiler__text">
+          Доверьте ремонт офиса под ключ команде ST Construction и будьте спокойны за результат — он оправдает ваши
+          ожидания
+          и совпадет с задумкой!
+        </p>
+      </div>
+
+      <button class="spoiler__btn" id="show"><img src="images/spoiler-button.svg" alt=""></button>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="_container">
+      <div class="footer__inner">
+        <img class="footer-img" src="images/logo.svg" alt="">
+        <div class="footer__item">
+          <span class="footer__item-text">ООО "СТ Констракшн"</span>
+          <a class="footer__item-text geo" href="https://goo.gl/maps/4SESFHipcNx421KT6">
+            г. Москва, Россия, 115054, ул.Валовая, 35
+          </a>
+        </div>
+        <div class="footer__item">
+          <a class="footer__item-text phone" href="tel:+79652025896">+7 (965) 202 58 96</a>
+          <a class="footer__item-text mail" href="mailto:vector_moscow@mail.ru">vector_moscow@mail.ru</a>
+        </div>
+        <div class="footer__item">
+          <ul class="footer-social">
+            <li class="footer-social__item">
+              <a class="footer-social__link" href="#"><img src="images/vk.svg" alt=""></a>
+            </li>
+            <li class="footer-social__item">
+              <a class="footer-social__link" href="#"><img src="images/classmates.png" alt=""></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div style="display: none; width: 500px;" id="hidden">
+
+    <form class="modalForm" action="">
+      <div class="modalForm__inner">
+        <input required class="modalForm__input" type="text" placeholder="Имя*">
+        <input required class="modalForm__input" type="text" placeholder="Email*">
+        <input required class="modalForm__input" type="text" placeholder="Номер телефона*">
+        <input required class="modalForm__input" id="last-input" type="text" placeholder="Название вашей компании*">
+        <label required class="message-form__checkbox-label date">
+          <span>Согласен с обработкой и хранением моих персональных данных</span>
+          <input class="message-form__checkbox" id="checkDate2" type="checkbox" name="" id="">
+        </label>
+        <button class="modalForm__btn btn" id="btnSubmit2" type="submit">Получить</button>
+      </div>
+    </form>
+
+  </div>
+
+  <nav class="siteNav">
+    <ul class="siteNav__list">
+      <li class="siteNav__list-item"><a class="siteNav__list-link" href="#top"></a></li>
+      <li class="siteNav__list-item"><a class="siteNav__list-link" href="#about"></a></li>
+      <li class="siteNav__list-item"><a class="siteNav__list-link" href="#advantages"></a></li>
+      <li class="siteNav__list-item"><a class="siteNav__list-link" href="#pluses"></a></li>
+      <li class="siteNav__list-item"><a class="siteNav__list-link" href="#project"></a></li>
+      <li class="siteNav__list-item"><a class="siteNav__list-link" href="#plane"></a></li>
+      <li class="siteNav__list-item"><a class="siteNav__list-link" href="#guide"></a></li>
+      <li class="siteNav__list-item"><a class="siteNav__list-link" href="#trust"></a></li>
+      <li class="siteNav__list-item"><a class="siteNav__list-link" href="#whoWeAre"></a></li>
+      <li class="siteNav__list-item"><a class="siteNav__list-link" href="#message"></a></li>
+    </ul>
+  </nav>
+
+  <a class="top" href="#top"><img src="images/top.svg" alt=""></a>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  <script src="js/jquery.formstyler.min.js"></script>
+  <script src="js/libs.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
